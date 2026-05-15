@@ -17,12 +17,13 @@
       <li><a href="#project">Project</a></li>
       <li><a href="#kontak">Kontak</a></li>
     </ul>
+    <button id="toggleMode">🌙Dark Mode</button>
   </nav>
 
   <!-- Hero Section -->
   <section id="tentang">
     <img src="foto profil.jpg" alt="Foto Kampus">
-    <h1>Selvin Damai Dohona</h1>
+    <h1 id="namaKetik"></h1>
     <p>Mahasiswa & Web Developer Pemula 🚀</p>
     <button>Hubungi Saya</button>
   </section>
@@ -49,6 +50,11 @@
   <h2>Hubungi Saya</h2>
   <p>📧 email@gmail.com</p>
   <p>📱 Instagram: @selvin</p>
+  <div class="card">
+   <input type="text" id="nama" placeholder="Nama kamu...">
+   <input type="text" id="pesan" placeholder="Tulis pesan...">
+   <button id="kirim">Kirim Pesan 📨</button>
+  </div>
 </section>
 
 <script src="script.js"></script>

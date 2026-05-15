@@ -33,9 +33,10 @@ section img {
   border: none;
   border-radius: 8px;
   font-size: 16px;
+  width: auto;
 }
 
-button:hover {
+.hover {
   background-color: #ffd700;
   color: #000000;
 }
@@ -77,3 +78,73 @@ nav ul li a:hover {
   color: #ffd700;
 }
 
+#toggleMode {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffd700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  width: auto;
+  display: inline-block;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+ .light-mode h1, 
+ .light-mode h2 {
+   color: #1a73e8;
+ }
+ 
+ .light-mode .card {
+   background-color: #f0f0f0;
+   border-color: #cccccc;
+ }
+ 
+ input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ffd700;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+ /* Animasi denyut foto profil */
+@keyframes denyut {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+section img {
+  animation: denyut 2s infinite;
+}
+
+/* Animasi muncul dari bawah */
+@keyframes muncul {
+  0% { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.card {
+  animation: muncul 0.5s ease;
+}
+
+/* Animasi navbar */
+nav {
+  animation: muncul 0.3s ease;
+} 
